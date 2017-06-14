@@ -7,6 +7,9 @@ csc /lib:c:\ /reference:Interop.MLApp.dll /reference:Ivi.Visa.Interop.dll Calibr
 Usage: 
 Calirate [AWG_Frequency]
 
-This C# CLI recieves unordered samples from the FIFO USB driver and reorders them based on Random Equivalent Time Sampling method
-aka the "beat frequency" method. 
+Other Notes: 
+
+-Must include MATLAB function myfunc.m in a folder named "temp" in C drive for Calibrate.cs to send samples to matlab properly. 
+
+-This C# CLI recieves unordered samples from the FIFO USB driver and reorders them based on Random Equivalent Time Sampling method aka the "beat frequency" method.
 
